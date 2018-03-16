@@ -9,6 +9,17 @@ repositories {
     mavenCentral()
 }
 
+task executableJar(type: Jar) {
+    manifest {
+        attributes 'Implementation-Version': version,
+                'Main-Class': 'com.agileengine.antonratiy.EntryPoint'
+    }
+    baseName = project.name + '-all'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
+
+
 dependencies {
     compile 'org.jsoup:jsoup:1.11.2'
 

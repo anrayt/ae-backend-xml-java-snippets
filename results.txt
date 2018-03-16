@@ -1,0 +1,31 @@
+1. java -jar ae-backend-xml-java-snippets-all-0.0.1.jar ./sample-0-origin.html ./sample-1-evil-gemini.html make-everything-ok-button
+
+[INFO] 2018-03-16 09:37:17,220 c.a.a.EntryPoint - --- Execution result ---
+[INFO] 2018-03-16 09:37:17,242 c.a.a.EntryPoint - Found element's selector : #page-wrapper > div.row:nth-child(3) > div.col-lg-8 > div.panel.panel-default > div.panel-body > a.btn.btn-success
+[INFO] 2018-03-16 09:37:17,248 c.a.a.EntryPoint - Found element's markup : <a class="btn btn-success" href="#check-and-ok" title="Make-Button" rel="done" onclick="javascript:window.okDone(); return false;"> Make everything OK </a>
+[INFO] 2018-03-16 09:37:17,249 c.a.a.EntryPoint - Found element's identity signs : [Tag names are equals, Class names are equals, Text values are equals, Attribute names are equals for current attributes : title, Attribute names are equals for current attributes : onClick, Parent's class names are equals, Parent's tag names are equals]
+[INFO] 2018-03-16 09:37:17,250 c.a.a.EntryPoint - Found element's identity level : 7
+
+2. java -jar ae-backend-xml-java-snippets-all-0.0.1.jar ./sample-0-origin.html ./sample-2-container-and-clone.html make-everything-ok-button
+
+[INFO] 2018-03-16 09:38:10,951 c.a.a.EntryPoint - --- Execution result ---
+[INFO] 2018-03-16 09:38:10,981 c.a.a.EntryPoint - Found element's selector : #page-wrapper > div.row:nth-child(3) > div.col-lg-8 > div.panel.panel-default > div.panel-body > div.some-container > a.btn.test-link-ok
+[INFO] 2018-03-16 09:38:10,989 c.a.a.EntryPoint - Found element's markup : <a class="btn test-link-ok" href="#ok" title="Make-Button" rel="next" onclick="javascript:window.okComplete(); return false;"> Make everything OK </a>
+[INFO] 2018-03-16 09:38:10,990 c.a.a.EntryPoint - Found element's identity signs : [Tag names are equals, Text values are equals, Attribute names are equals for current attributes : href, Attribute names are equals for current attributes : title, Parent's tag names are equals]
+[INFO] 2018-03-16 09:38:10,991 c.a.a.EntryPoint - Found element's identity level : 5
+
+3. java -jar ae-backend-xml-java-snippets-all-0.0.1.jar ./sample-0-origin.html ./sample-3-the-escape.html make-everything-ok-button
+
+[INFO] 2018-03-16 09:38:57,417 c.a.a.EntryPoint - --- Execution result ---
+[INFO] 2018-03-16 09:38:57,439 c.a.a.EntryPoint - Found element's selector : #page-wrapper > div.row:nth-child(3) > div.col-lg-8 > div.panel.panel-default > div.panel-footer > a.btn.btn-success
+[INFO] 2018-03-16 09:38:57,442 c.a.a.EntryPoint - Found element's markup : <a class="btn btn-success" href="#ok" title="Do-Link" rel="next" onclick="javascript:window.okDone(); return false;"> Do anything perfect </a>
+[INFO] 2018-03-16 09:38:57,443 c.a.a.EntryPoint - Found element's identity signs : [Tag names are equals, Class names are equals, Attribute names are equals for current attributes : href, Attribute names are equals for current attributes : onClick, Parent's tag names are equals]
+[INFO] 2018-03-16 09:38:57,445 c.a.a.EntryPoint - Found element's identity level : 5
+
+4. java -jar ae-backend-xml-java-snippets-all-0.0.1.jar ./sample-0-origin.html ./sample-4-the-mash.html make-everything-ok-button
+
+[INFO] 2018-03-16 09:39:41,457 c.a.a.EntryPoint - --- Execution result ---
+[INFO] 2018-03-16 09:39:41,478 c.a.a.EntryPoint - Found element's selector : #page-wrapper > div.row:nth-child(3) > div.col-lg-8 > div.panel.panel-default > div.panel-footer > a.btn.btn-success
+[INFO] 2018-03-16 09:39:41,486 c.a.a.EntryPoint - Found element's markup : <a class="btn btn-success" href="#ok" title="Make-Button" rel="next" onclick="javascript:window.okFinalize(); return false;"> Do all GREAT </a>
+[INFO] 2018-03-16 09:39:41,487 c.a.a.EntryPoint - Found element's identity signs : [Tag names are equals, Class names are equals, Attribute names are equals for current attributes : href, Attribute names are equals for current attributes : title, Parent's tag names are equals]
+[INFO] 2018-03-16 09:39:41,488 c.a.a.EntryPoint - Found element's identity level : 5
